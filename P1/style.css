@@ -1,0 +1,243 @@
+
+/* 1. Main Font and Font Styles */
+
+*{/* Main Font */
+  font-family: "Inconsolata", monospace;
+  
+}
+h1 {/* Big Font */
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-style: bold;
+  font-size: 140px;
+  line-height: .02;
+}
+h4 {/* buttons1 */
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-style: bold;
+  font-size: 24px;
+  line-height: .5;
+}
+h3 {/* buttons2 */
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-size: 22px;
+  line-height: .02;
+}
+h2 {/* Subtitle */
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-style: bold;
+  font-size: 30px;
+}
+h5 {/* Minor Font */
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-style: normal;
+  font-size: 22px;
+}
+h6 {/* Title */
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-style: bold;
+  font-size: 35px;
+  line-height: 0;
+
+}
+
+h7 {/* Title */
+  color: white;
+  font-family: "Inconsolata", monospace;
+  font-style: bold;
+  font-size: 20px;
+
+}
+
+/* 2. Page Allignments */
+
+header {
+  padding: 25px;
+  margin: 30px;
+}
+
+body {
+  
+  background-color: rgb(0, 0, 0);
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center top;
+  background-repeat: no-repeat;
+
+}
+
+footer {
+  
+  color: azure;
+  text-align: center;
+
+}
+
+/* 3. Colored Bars */
+
+/* 4. Boxes and Containers */
+
+.box {
+  width: 120px;
+  height: 120px;
+  padding: 0px;
+  margin: -30px;
+  text-align: left;
+}
+.PageChangeContainer {
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(247, 233, 199);
+  border-radius: 0.5em;
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.PageCloseContainer {
+  border: 3px solid rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  border-radius: 0.5em;
+  display: flex;
+  padding: 30px;
+  gap: 30px;
+}
+
+.BoxesContainer {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  gap: 30px;
+}
+
+.FolderContainer {
+  display: flex;
+  padding: 50px;
+  justify-content: center;
+  gap: 300px;
+  margin: 20px;
+}
+
+.Mainscreen {
+  background-image: url(images/Background1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 1050px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.Mainscreen2 {
+  background-size: cover;
+  border-radius: 0.5em;
+  border: 3px solid rgb(255, 255, 255);
+  background-image: url(images/Background2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 1100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.MainContent1 {
+
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.5em;
+
+  width: 65%;
+  
+  text-align: left;
+}
+
+.Filler {
+ 
+  width: 10px;
+  
+}
+
+.BlueButton {
+  border-radius: 0.5em;
+  background-color: rgb(112, 105, 228);
+  border: 3px solid rgb(232, 232, 232);
+  width: 1000px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.YellowButton {
+  border-radius: 0.5em;
+  background-color: rgb(247, 227, 178);
+  border: 2px solid white;
+  width: 1000px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.RedButton {
+  border-radius: 0.5em;
+  background-color: rgb(230, 125, 120);
+  border: 2px solid white;
+  width: 1000px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.BlueButton2 {
+  border-radius: 0.5em;
+  background-color: rgb(112, 105, 228);
+  border: 3px solid rgb(232, 232, 232);
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+.RedButton2 {
+  border-radius: 0.5em;
+  background-color: rgb(230, 125, 120);
+  border: 2px solid white;
+  width: 300px;
+  padding: 20px;
+  margin: auto;
+  text-align: center;
+}
+
+
+a {
+
+  color: black; /* Default link color */
+
+  text-decoration: none; /* Remove underline on hover */
+
+}
+
+a:visited {
+
+  color: black; /* Different color for visited links */
+
+  text-decoration: none; /* Remove underline on hover */
+
+
+}
+
+a:hover {
+
+  color: white; /* Darker color on hover */
+
+  text-decoration: none; /* Remove underline on hover */
+
+}
