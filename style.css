@@ -351,3 +351,19 @@ b {
 
 }
 
+c {
+
+  color: rgb(145, 181, 238); /* Default link color */
+
+}
+c:visited {
+
+  color: rgb(14, 19, 41); /* Different color for visited links */
+
+}
+c:hover {
+
+  color: rgb(255, 255, 255); /* Darker color on hover */
+
+}
+

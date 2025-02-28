@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'CreatoDisplay';
+    src: url(CreatoDisplay.otf);
+}
+
+@font-face {
+    font-family: 'Mon';
+    src: url(ShareTechMono-Regular.ttf);
+}
+
+body {
+    font-family: 'CreatoDisplay';
+    background-color: black;
+}
+
+.grid-container {
+  min-height: 100vh;
+  margin: 0 350px;
+  display: grid;
+  background-color: black;
+  grid-template-areas: 
+  "header header header"
+  "hero hero hero"
+  "subhero subhero subhero"
+  "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+   background-color: rgb(200, 200, 225);
+    color: white; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero {
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(200, 200, 225);
+    margin: 0px;
+;
+}
+main {
+    padding: 24px;
+}
+
+.subhero {
+    grid-area: subhero;
+    padding: 10px 10px;
+    background-color: #a3abdb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #EED8D8;
+      font-size: 20px;
+  text-align: Center;
+
+}
+
+.footer {
+    grid-area: footer;
+   background-color: rgb(42,52,96);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f1c8c8;
+    font-size: 22px;
+    text-align: center;
+  
+}
+
+.footer-content {
+    padding: 18px;
+}
+
+.box {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.White1 { /* Header Color 2 */
+  min-height: 1.3vh;
+  width: 55%;
+  background-color: #EED8D8;
+  margin: 7px;
+  border-radius: 20px; 
+}
+.White2 { /* Header Color 2 */
+  min-height: 1.5vh;
+  width: 70%;
+  background-color: #EED8D8;
+      opacity: 0.7;
+  border-radius: 20px; 
+  margin:6px;
+}
+.White3 { /* Header Color 1 */
+  min-height: 1.7vh;
+  width: 90%;
+  background-color: #EED8D8;
+      opacity: 0.5;
+  margin: 5px;
+  border-radius: 20px; 
+}
+.White4 { /* Header Color 1 */
+  min-height: 2vh;
+  width: 100%;
+  background-color: #EED8D8;
+    opacity: 0.3;
+  margin: 6px;
+  border-radius: 20px; 
+}
+.White5 { /* Header Color 1 */
+  min-height: 1vh;
+  width: 100%;
+  background-color: #EED8D8;
+  margin: 5px;
+}
+c {
+
+  color: rgb(145, 181, 238); /* Default link color */
+
+  text-decoration: none; /* Remove underline on hover */
+
+  cursor: url('images/cursor_Point.png'), auto;
+
+
+}
+c:visited {
+
+  color: rgb(14, 19, 41); /* Different color for visited links */
+
+  text-decoration: none; /* Remove underline on hover */
+
+}
+c:hover {
+
+  color: rgb(255, 255, 255); /* Darker color on hover */
+
+  text-decoration: none; /* Remove underline on hover */
+
+  cursor: url('images/cursor_Point.png'), auto;
+
+}

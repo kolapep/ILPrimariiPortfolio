@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'CreatoDisplay';
+    src: url(Inconsolata-VariableFont_wdth,wght.ttf
+);
+}
+
+@font-face {
+    font-family: 'Mon';
+    src: url(ShareTechMono-Regular.ttf);
+}
+
+body {
+    font-family: 'CreatoDisplay';
+    background-color: black;
+
+}
+
+.grid-container {
+  min-height: 100vh;
+  margin: 0 350px;
+  display: grid;
+  background-color: black;
+  grid-template-areas: 
+  "header header header"
+  "hero hero hero"
+  "subhero subhero subhero"
+  "footer footer footer";
+}
+
+.header {
+
+    grid-area: header;
+    background-color: #020a0d;
+    color: rgb(167,67,67); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.hero {
+    grid-area: hero;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0d0d0d;
+  margin: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+
+;
+}
+main {
+    padding: 20px;
+}
+
+.subhero {
+    grid-area: subhero;
+    background-color: #020a0d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      flex-direction: column;
+      padding: 5px 20px;
+
+}
+.subContent {
+    padding: 5px 15px;
+      background-color: rgb(225,225,225,.1);
+    color: #B8D1C4;
+  font-size: 20px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(167,67,67);
+  
+}
+
+.footer-content {
+    padding: 30px;
+}
+
+.box {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Black { /* Header Color 1 */
+  min-height: 1vh;
+  width: 100%;
+  background-color: black;
+  align-self: bottom;
+    margin: 0px;
+}
+.White { /* Header Color 2 */
+  min-height: 1vh;
+  width: 100%;
+  background-color: rgb(24,71,74);
+  align-self: bottom;
+  margin: 0px;
+}
+c {
+
+  color: rgb(145, 181, 238); /* Default link color */
+
+  text-decoration: none; /* Remove underline on hover */
+
+  cursor: url('images/cursor_Point.png'), auto;
+
+
+}
+c:visited {
+
+  color: rgb(14, 19, 41); /* Different color for visited links */
+
+  text-decoration: none; /* Remove underline on hover */
+
+}
+c:hover {
+
+  color: rgb(255, 255, 255); /* Darker color on hover */
+
+  text-decoration: none; /* Remove underline on hover */
+
+  cursor: url('images/cursor_Point.png'), auto;
+
+}
