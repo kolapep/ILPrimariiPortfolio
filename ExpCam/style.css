@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'CreatoDisplay';
+    src: url(CreatoDisplay-Regular.otf);
+}
+
+body {
+    font-family: 'CreatoDisplay';
+    outline: 5px dotted rgb(255,255,255);
+}
+
+/* .header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255,255,255);
+    margin-bottom: 5px;
+}
+
+.textBox{
+  margin: 7px;
+}
+
+main {
+    padding: 24px;
+} */
