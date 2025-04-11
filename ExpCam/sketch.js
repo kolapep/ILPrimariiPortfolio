@@ -13,6 +13,8 @@ let fontSize3 = 20;
 let fontSize4 = 32; //UI
 let fontSize5 = 18; //UI
 let textColor = "white";
+let ZoomNumber = 0;
+let ZoomScale = 1;
 
 function preload() {
   // Load the model
@@ -50,9 +52,10 @@ function draw() {
   
    // DRAW VIDEO (Flip Horizonally)
     push();
-  translate(width,0); 
+  translate(width,0);
   scale(-1, 1);
-  image(video, 0, 0, 1280, 1000);
+  // image(video, -width/2, -width/2, 2640, 2000);
+  image(video, ZoomNumber, ZoomNumber, 1320 * ZoomScale, 1000 * ZoomScale);
     pop();
   
    // DRAW INSTRUCTIONS
@@ -63,29 +66,27 @@ function draw() {
   textSize(fontSize3);
   text("No Zoom", width - 35, height / 7 + fontSize2);
   text("Face", width - 35, height / 7 + fontSize2 * 2);
-  text("Eyes", width - 35, height / 7 + fontSize2* 3);
-  text("Right", width - 35, height / 7 + fontSize2* 4);
-  text("Left", width - 35, height / 7 + fontSize2* 5);
+ 
   
   // SWITCH LABEL
   let baseText = "...";
   if (label == "No Zoom") {
     baseText = "Zoom Out";
+    ZoomScale = 1;
+    ZoomNumber = 0;
   } else if (label == "Face") {
     baseText = "Zoom In";
-  } else if (label == "Eyes") {
-    baseText = "Eyes";
-  } else if (label == "Right") {
-    baseText = "Right";
-  } else if (label == "Left") {
-    baseText = "Left";
-}
+    ZoomScale = 2;
+    ZoomNumber = -width/4;
+  }
   
+  push();
    // DRAW LABEL
   fill(textColor);
   textAlign(CENTER, CENTER);
   textSize(fontSize1);
   text(baseText, width / 2, height - 60);
+  pop();
   
   //Draw UI
     push();
@@ -111,6 +112,7 @@ function draw() {
 function SwitchColors() {
   if (textColor == "black"){
     textColor = "white"
+
   }
   else if (textColor == "white"){
     textColor = "black"
