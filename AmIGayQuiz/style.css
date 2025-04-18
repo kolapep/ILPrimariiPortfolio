@@ -1,0 +1,369 @@
+
+/* 1. MAIN BODY SETTINGS */
+
+body {
+  background-color: black;
+  height: 100%;
+  cursor: url('images/cursor_Default.png'), auto;
+}
+
+/* 2. BOXES AND SPACING SETTINGS*/
+
+/* Main Boxes */
+.box {
+  height: auto;
+  width: auto;
+  text-align: center;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.textBoxColumn {
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  text-align: left;
+  display:flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  margin: 20px;
+}
+.textBoxRow { 
+  border-radius: 5px;
+  height: auto;
+  width: auto;
+  text-align: left;
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 15px;
+}
+
+/* Select Use Boxes and Spacing */
+
+.textbox { /* About Page Box*/
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  text-align: left;
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.GameContent { /* Game content textbox */
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0.5em;
+  width: 90%;
+  text-align: left;
+}
+
+.spaced { /* footer spacing */
+  margin-top: 10px
+}
+.coderow{
+  height:280px;
+  margin: 35px;
+}
+.textMargins{
+  text-indent: 15px;
+}
+
+
+/* Backgrounds and Colors */
+
+.pale {
+  border-radius: 5px;
+  margin-right: 15px;
+  margin-left: 15px;
+  background-color: rgba(255, 255, 255, 0.966);
+}
+.dark{
+  background-color: #000000cd;
+}
+.palegrid {
+  border-radius: 5px;
+  margin: 20px;
+  align-self: column;
+  flex-direction: column;
+  background-image: url(images/Background2.png);
+  background-size: contain;
+}
+.paleblue {
+  border-radius: 5px;
+  margin: 20px;
+  align-self: column;
+  flex-direction: column;
+  background-image: url(images/BackgroundMain.png);
+  background-size: contain;
+}
+.Black { /* Header Color 1 */
+  height: 3px;
+  width: 100%;
+  background-color: white;
+}
+.White { /* Header Color 2 */
+  height: 15px;
+  width: 100%;
+  background-color: black;
+}
+.whitetext{
+  color: white;
+}
+
+/* 3. GRID TEMPLATE SETTINGS */
+
+/* Base Grid Template */
+.theHead {
+  background-color: black;
+  color: white;
+  flex-direction: column;
+}
+.theFoot {
+  background-color: black;
+  color: white;
+  column-gap: 5px;
+}
+
+.grid {
+  display: grid;
+  background-color: #fff;
+  border: 1px solid #000;
+  row-gap: 0px;
+}
+
+/* Home Grid Template Layout */
+.grid-template-area-home {
+  grid-template-areas: 
+  "header header header"
+  "sidebar1 main sidebar2"
+  "footer footer footer";
+}
+.grid-template-area-home .theHead {
+  grid-area: header;
+}
+.grid-template-area-home .theLeftSide {
+  grid-area: sidebar1;
+  background-color: white;
+}
+.grid-template-area-home .theRightSide {
+  grid-area: sidebar2;
+  background-color: white;
+
+}
+.grid-template-area-home .theMain {
+  grid-area: main;
+  background-image: url(images/movingBackground.gif);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+}
+.grid-template-area-home .theFoot {
+  grid-area: footer;
+}
+
+/* Pages Grid Template Layout */
+.grid-template-area-page {
+  grid-template-areas: 
+  "header header header header header header header"
+  "sidebar1 main main main main main main "
+  "sidebar1 main main main main main main "
+  "sidebar1 main main main main main main "
+  "sidebar1 main main main main main main "
+  "sidebar1 main main main main main main "
+  "footer footer footer footer footer footer footer";
+}
+.grid-template-area-page .theHead {
+  grid-area: header;
+}
+.grid-template-area-page .theLeftSide {
+  grid-area: sidebar1;
+  background-image: url(images/movingBackground.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.grid-template-area-page .theMain {
+  grid-area: main;
+  background-color: black;
+  text-align: left;
+  flex-direction: column;
+  align-items:top;
+}
+.grid-template-area-page .theFoot {
+  grid-area: footer;
+}
+
+/* Side Content Grid Template Layout */
+.grid-template-area-side {
+  grid-template-areas: 
+  "header header header header header header header"
+  "sidebar1 content1 content1 content2 content2 content3 content3"
+  "sidebar1 content1 content1 content2 content2 content3 content3"
+  "footer footer footer footer footer footer footer";
+}
+.grid-template-area-side .theHead {
+  grid-area: header;
+}
+.grid-template-area-side .theLeftSide {
+  grid-area: sidebar1;
+  background-image: url(images/movingBackground.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+.grid-template-area-side .Main1 {
+  grid-area: content1;
+  background-image: url(images/CoverContent1.png);
+}
+.grid-template-area-side .Main2 {
+  grid-area: content2;
+  background-image: url(images/CoverContent2.png);
+}
+.grid-template-area-side .Main3 {
+  grid-area: content3;
+  background-image: url(images/CoverContent3.png);
+}
+.grid-template-area-side .Main4 {
+  grid-area: content1;
+  background-image: url(images/CoverContent5.png);
+}
+.grid-template-area-side .Main5 {
+  grid-area: content2;
+  background-image: url(images/CoverContent4.png);
+}
+.grid-template-area-side .Main6 {
+  grid-area: content3;
+  background-image: url(images/CoverContent6.png);
+}
+.grid-template-area-side .theFoot {
+  grid-area: footer;
+}
+
+.Layer{
+  background-repeat: no-repeat;
+  background-position: center;  
+  text-orientation: upright;
+  align-items:center;
+}
+
+/* 5. GRID GAP SETTINGS */
+
+.grid-gap {
+  margin-top: 60px;
+  grid-template-columns: auto auto;
+  grid-column-gap: 120px;
+  grid-row-gap: 150px;
+  background-color: rgba(128, 128, 128, 0);
+  border: 1px rgba(0, 0, 0, 0);
+}
+.grid-gap-page {
+  grid-row-gap: 100px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px rgba(0, 0, 0, 0);
+}
+
+/* 6. BUTTONS SETTINGS */
+
+/* Button Sizes */
+.Button { /* Home Buttons */
+  border-radius: 0.5em;
+  border: 3px solid rgba(39, 39, 40, 0.445);
+  width: 200px;
+  padding: 15px;
+  margin: 0px;;
+  text-align: left;
+}
+.bigButton { /* Back to Page Button */
+  border-radius: 0.5em;
+  border: 3px solid rgb(232, 232, 232);
+  width: auto;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  color: white;
+}
+.smallButton { /* Navigation Pannel Buttons */
+  border-radius: 0.5em;
+  border: 4px solid rgba(246, 246, 246, 0.8);
+  width: 200px;
+  padding: 5px;
+  margin: 5px;
+  text-align: center;
+  color:white;
+}
+
+/* Button Colors */
+.Blue {
+  background-color: rgba(173, 170, 224, 0.9);
+}
+.Yellow {
+  background-color: rgba(233, 222, 194, 0.9);
+}
+.Pink {
+  background-color: rgba(233, 199, 198, 0.9);
+}
+.Red {
+  background-color: rgba(221, 92, 96, 0.444);
+}
+.Light {
+  background-color: rgba(239, 239, 245, 0.932);
+}
+
+/* 7. URL Interaction Settngs */
+
+a {
+
+  color: black; /* Default link color */
+
+  text-decoration: none; /* Remove underline on hover */
+
+  cursor: url('images/cursor_Point.png'), auto;
+
+
+}
+a:visited {
+
+  color: black; /* Different color for visited links */
+
+  text-decoration: none; /* Remove underline on hover */
+
+}
+a:hover {
+
+  color: rgb(255, 255, 255); /* Darker color on hover */
+
+  text-decoration: none; /* Remove underline on hover */
+
+  cursor: url('images/cursor_Point.png'), auto;
+
+}
+
+b {
+
+  color: white; /* Default link color */
+
+}
+
+c {
+
+  color: rgb(145, 181, 238); /* Default link color */
+
+}
+c:visited {
+
+  color: rgb(14, 19, 41); /* Different color for visited links */
+
+}
+c:hover {
+
+  color: rgb(255, 255, 255); /* Darker color on hover */
+
+}
+
