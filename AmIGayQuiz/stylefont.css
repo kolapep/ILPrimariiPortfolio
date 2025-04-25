@@ -2,143 +2,85 @@
 /* FONT UPLOAD */
 
 @font-face {
-    font-family: 'Arthead';
-    src: url(Fonts/Arthead-RegularFREE.ttf);
+    font-family: 'ProximaNovaRegular';
+    src: url(ProximaNova-Regular.otf);
 }
 @font-face {
-    font-family: 'CreatoDisplayThin';
-    src: url(Fonts/CreatoDisplay-Thin.ttf);
+  font-family: 'ProximaNovaItalic';
+  src: url(ProximaNovaAltRegularItalic.otf);
 }
 @font-face {
-    font-family: 'CreatoDisplayRegular';
-    src: url(Fonts/CreatoDisplay-Regular.ttf);
+  font-family: 'ProximaNovaBold';
+  src: url(ProximaNova-Bold.otf);
+}
+@font-face {
+  font-family: 'ProximaNovaExtrabold';
+  src: url(ProximaNovaExtrabold.otf);
+}
+
+.secondary{
+  font-family: Helvetica, Sans-serif;
+}
+
+/* FONT COLOR */ 
+
+.greyText {/*greyText*/
+  color: rgb(85, 85, 85); 
+}
+
+.blueText {/*greyText*/
+  color: rgb(70, 62, 231); ; 
 }
 
 /* FONT SIZES */ 
 
 *{ /* 1. UI: HOME PAGE */ 
-  h1 { /*Big Header Title */
-    font-family: 'Arthead';
-    font-size: 80px;
-    line-height: 0;
-    margin-top: 60px
-  }
-  h2 {/*Header Subtitle*/
-    font-family: 'CreatoDisplayThin';
-    font-size: 30px;
+  h1 {/*Buzzfeed Header*/
+    font-family: 'ProximaNovaExtrabold';
+    font-size: 40px;
     line-height: 0px;
-    margin-bottom: 40px
-  }
-  h3 {/* Footer Text*/
-    font-family: 'CreatoDisplayThin';
-    font-size: 24px;
-    line-height: .02;
-  }
-  h4 {/* Home Buttons Big*/
-    font-family: 'CreatoDisplayRegular';
-    font-size: 26px;
-    line-height: .5;
-    letter-spacing: .1em;
-  }
-  h17 {/* Home Buttons Small*/
-    font-family: 'CreatoDisplayThin';
-    font-size: 24px;
-  }
-/* 2. UI: MAIN PAGES */ 
-  h5 {/* Header Title*/
-    font-family: 'Arthead';
-    font-size: 60px;
-    line-height: 0;
-    margin-top: 40px;
-    margin-bottom: 40px;
-
-  }
-  h6 {/* Page Buttons */
-    font-family: 'CreatoDisplayRegular';
-    font-size: 24px;
-    line-height: 0px;
-    letter-spacing: .1em;
-  }
-/* 3. MAIN TEXT: ABOUT*/ 
-  h7 {/* Normal*/
-    font-family: 'CreatoDisplayRegular';
-    font-size: 26px;
-    line-height: 40px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
-  h13 {/* Indented*/
-    font-family: 'CreatoDisplayRegular';
-    font-size: 26px;
-    line-height: 40px;
-    margin-bottom: 8px;
-    margin-top: 8px;
-    margin-right: 30px;
-    margin-left: 30px;
-  }
-  h14 {/* Normal*/
-    font-family: 'CreatoDisplayRegular';
-    font-size: 26px;
-    margin-bottom: 0px;
-    margin-top: 0px;
-  }
-  h8 {/* Title*/
-    font-family: 'Arthead';
-    font-size: 100px;
-    line-height: 120px;
-    margin: 0px;
-    }
-  h9 {/* Subtitle*/
-    font-family: 'Arthead';
-    font-size: 60px;
-    line-height: 40px;
-    margin-bottom: 25px;
-    margin-top: 5px;
-  }
-/* 4. MAIN TEXT: CODE */ 
-  h10 {/*Page Title*/
-    font-family: 'CreatoDisplayRegular';
-    font-size: 36px;
-    line-height: 30px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
-
-  }
-  h11 {/*Page Subtitle*/
-    font-family: 'CreatoDisplayThin';
-    font-size: 30px;
-    line-height: 20px;
-    margin-bottom: 10px;
-    color: white;
-  }
-  h12 {/* Normal*/
-    font-family: 'CreatoDisplayRegular';
-    font-size: 24px;
-    line-height: 40px;
-    margin-bottom: 5px;
-    margin-top: 10px;
-  }
-  h15 {/* LINK*/
-    font-family: 'CreatoDisplayRegular';
-    font-size: 30px;
-    line-height: 20px;
-    margin-bottom: 5px;
-    color:rgb(143, 198, 230);
-    text-decoration: underline;
-  }
-  h18 {/* LINK*/
-    font-family: 'CreatoDisplayRegular';
-    font-size: 24px;
-    line-height: 10px;
-    color:rgb(143, 198, 230);
-    text-decoration: underline;
-  }
-  h16 { /*Site Titles */
-    font-family: 'Arthead';
-    font-size: 80px;
-    margin: 20px;
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 50px
+  }
+  h2 { /*Fake Buttons Text*/
+    font-family: Helvetica;
+    font-size: 15px;
+    line-height: 0;
+    margin-top: 20px;
+    margin-bottom: 20px
+  }
+  h3 {/*Small Page Details*/
+    font-family: Helvetica;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  h4 {/* Page Title*/
+    font-family: 'ProximaNovabold';
+    font-size: 40px;
+    line-height: 0px;
+    margin-top: 50px;
+    margin-bottom: 30px
+  }
+  h5 {/* Sub Title*/
+    font-family: Helvetica;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:rgb(85, 85, 85);
+
+  }
+  h6 {/* Page Description*/
+    font-family: Helvetica;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  h7 {/* Tiny Description*/
+    font-family: Helvetica;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:rgb(122, 122, 122);
   }
 }
