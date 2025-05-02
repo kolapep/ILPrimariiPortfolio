@@ -84,3 +84,33 @@
     color:rgb(122, 122, 122);
   }
 }
+
+/* Links */
+
+
+c {
+
+  color: rgb(145, 181, 238); /* Default link color */
+  
+  text-decoration: none; /* Remove underline on hover */
+  
+  cursor: url('images/cursor_Point.png'), auto;
+  
+  
+  }
+  c:visited {
+  
+  color: rgb(14, 19, 41); /* Different color for visited links */
+  
+  text-decoration: none; /* Remove underline on hover */
+  
+  }
+  c:hover {
+  
+  color: rgb(255, 255, 255); /* Darker color on hover */
+  
+  text-decoration: none; /* Remove underline on hover */
+  
+  cursor: url('images/cursor_Point.png'), auto;
+  
+  }

@@ -45,6 +45,12 @@ input{
   text-align: center;
 }
 
+select{
+  width: 50%;
+  min-height: 40px;
+  font-size: 20px;
+}
+
 /* Header Page Sections */
 
 .header {
@@ -84,7 +90,7 @@ input{
   background-color: rgb(231, 231, 231);
   display: flex;
   flex-direction: column;
-  height: 140px;
+  height: 160px;
 }
 
 /* Main Page Sections */
@@ -147,6 +153,8 @@ grid-template-areas:
   text-align: center;
 }
 
+/* Content Sections */
+
 contentbox {
   padding: 24px;
   justify-content: center;
@@ -162,11 +170,24 @@ centeredcontentbox {
   text-align: center;
 }
 
+Boldcontentbox {
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  border-radius: 0.3em;
+  border: 3px solid rgba(39, 39, 40, 0.445);
+}
+
 .footer-content {
   padding: 18px;
 }
 
 /* Quiz Decoration */
+
+red{
+  color: rgb(39, 35, 146);
+}
 
 .yellowButton { /* Quiz Decoration */
   height: 45px;
@@ -194,29 +215,25 @@ centeredcontentbox {
   border-radius: 18px; 
 }
 
-c {
-
-color: rgb(145, 181, 238); /* Default link color */
-
-text-decoration: none; /* Remove underline on hover */
-
-cursor: url('images/cursor_Point.png'), auto;
-
-
-}
-c:visited {
-
-color: rgb(14, 19, 41); /* Different color for visited links */
-
-text-decoration: none; /* Remove underline on hover */
+.Button { /* Main Button */
+  border-radius: 0.5em;
+  border: 3px solid rgba(39, 39, 40, 0.445);
+  padding: 10px;
+  margin: 5px;
+  min-width: 250px;
+  text-align: center;
 
 }
-c:hover {
 
-color: rgb(255, 255, 255); /* Darker color on hover */
-
-text-decoration: none; /* Remove underline on hover */
-
-cursor: url('images/cursor_Point.png'), auto;
-
+.smallButton { /* Skip Button */
+  border-radius: 0.5em;
+  border: 3px solid rgba(39, 39, 40, 0.445);
+  padding: 10px;
+  margin: 0px;
+  margin-left: 50%;
+  width: 250px;
+  text-align: right;
 }
+
+
+
