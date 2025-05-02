@@ -88,9 +88,9 @@
 /* Links */
 
 
-c {
+a {
 
-  color: rgb(145, 181, 238); /* Default link color */
+  color: rgb(70, 62, 231);/* Default link color */
   
   text-decoration: none; /* Remove underline on hover */
   
@@ -98,16 +98,16 @@ c {
   
   
   }
-  c:visited {
+  a:visited {
   
-  color: rgb(14, 19, 41); /* Different color for visited links */
+  color:  rgb(70, 62, 231); /* Different color for visited links */
   
   text-decoration: none; /* Remove underline on hover */
   
   }
-  c:hover {
+  a:hover {
   
-  color: rgb(255, 255, 255); /* Darker color on hover */
+  color: rgb(31, 31, 86); /* Darker color on hover */
   
   text-decoration: none; /* Remove underline on hover */
   

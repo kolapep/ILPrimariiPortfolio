@@ -217,7 +217,7 @@ red{
 
 .Button { /* Main Button */
   border-radius: 0.5em;
-  border: 3px solid rgba(39, 39, 40, 0.445);
+  border: 3px solid rgb(84, 76, 232);
   padding: 10px;
   margin: 5px;
   min-width: 250px;
@@ -227,7 +227,7 @@ red{
 
 .smallButton { /* Skip Button */
   border-radius: 0.5em;
-  border: 3px solid rgba(39, 39, 40, 0.445);
+  border: 3px solid rgb(123, 120, 219);
   padding: 10px;
   margin: 0px;
   margin-left: 50%;
