@@ -1,0 +1,98 @@
+
+/* FONT UPLOAD */
+
+@font-face {
+  font-family: 'Lavinia';
+  src: url(Lavinia.otf);
+}
+@font-face {
+font-family: 'SicretMono';
+src: url(SicretMono_PERSONAL-Regular.ttf);
+}
+
+/* FONT COLOR */ 
+
+.greyText {/*greyText*/
+  color: rgb(85, 85, 85); 
+}
+
+.blueText {/*RedText*/
+  color: rgb(107, 16, 11); ; 
+}
+
+/* FONT SIZES */ 
+
+*{ /* 1. UI: HOME PAGE */ 
+  h1 {/*Buzzfeed Header*/
+    font-family: 'SicretMono';
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px
+  }
+  h2 { /*Credits Text*/
+    font-family: 'Lavinia';
+    font-size: 15px;
+    line-height: 0;
+    margin-top: 20px;
+    margin-bottom: 20px
+  }
+  h3 {/*Main Page Details*/
+    font-family: 'Lavinia';
+    font-size: 20px;
+    margin: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  h4 {/* Main Poem Details*/
+    font-family: 'Lavinia';
+    font-size: 18px;
+    margin: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  h5 {/* Sub Title*/
+    font-family: 'Lavinia';
+    font-size: 14px;
+    margin: 5px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    color: rgb(85, 85, 85); 
+
+  }
+  h6 {/* Page Description*/
+    font-family: 'SicretMono';
+    font-size: 40px;
+    margin-top: 60px;
+    margin-bottom: 50px
+  }
+}
+
+/* Links */
+
+
+a {
+
+  color: rgb(70, 62, 231);/* Default link color */
+  
+  text-decoration: none; /* Remove underline on hover */
+  
+  cursor: url('images/cursor_Point.png'), auto;
+  
+  
+  }
+  a:visited {
+  
+  color:  rgb(70, 62, 231); /* Different color for visited links */
+  
+  text-decoration: none; /* Remove underline on hover */
+  
+  }
+  a:hover {
+  
+  color: rgb(31, 31, 86); /* Darker color on hover */
+  
+  text-decoration: none; /* Remove underline on hover */
+  
+  cursor: url('images/cursor_Point.png'), auto;
+  
+  }
