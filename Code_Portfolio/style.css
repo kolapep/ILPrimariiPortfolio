@@ -240,8 +240,7 @@ body {
 }
 .grid-template-area-side .Main6 {
   grid-area: content3;
-  background-image: url(images/CoverContent7.png);
-    background-size: cover;
+  background-image: url(images/CoverContent6.png);
 }
 .grid-template-area-side .theFoot {
   grid-area: footer;
