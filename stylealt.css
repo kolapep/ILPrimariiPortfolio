@@ -176,6 +176,7 @@ body {
 .grid-template-area-side .Main6 {
   grid-area: content3;
   background-image: url(images/CoverContent7.png);
+  background-size: cover;
 }
 .grid-template-area-side .Main7 {
   grid-area: content4;
